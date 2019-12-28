@@ -66,13 +66,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontFamily: 'Montserrat',
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 25.0)),
+                        fontSize: 40.0)),
                 SizedBox(width: 10.0),
                 Text('App',
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         color: Colors.white,
-                        fontSize: 25.0))
+                        fontSize: 40.0))
               ],
             ),
           ),
@@ -85,12 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             child: ListView(
               primary: false,
-              padding: EdgeInsets.only(left: 25.0, right: 20.0),
+              padding: EdgeInsets.only(left: 25.0, right: 20.0,),
               children: <Widget>[
                 Padding(
                     padding: EdgeInsets.only(top: 45.0),
                     child: Container(
-                        height: MediaQuery.of(context).size.height - 300.0,
+                        height: MediaQuery.of(context).size.height - 400.0,
                         child: ListView(children: [
                           _buildFoodItem('assets/plate1.png', 'Salmon bowl', '\$24.00'),
                           _buildFoodItem('assets/plate2.png', 'Spring bowl', '\$22.00'),
@@ -143,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: TextStyle(
                                   fontFamily: 'Montserrat',
                                   color: Colors.white,
-                                  fontSize: 15.0))),
+                                  fontSize: 18.0))),
                     )
                   ],
                 )

@@ -17,7 +17,7 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFFDFD96),
+        backgroundColor: Color(0xFFFFE662),
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {
@@ -31,7 +31,7 @@ class _DetailsPageState extends State<DetailsPage> {
           title: Text('Details',
               style: TextStyle(
                   fontFamily: 'Montserrat',
-                  fontSize: 18.0,
+                  fontSize: 38.0,
                   color: Colors.white)),
           centerTitle: true,
           actions: <Widget>[
@@ -81,7 +81,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     Text(widget.foodName,
                         style: TextStyle(
                             fontFamily: 'Montserrat',
-                            fontSize: 22.0,
+                            fontSize: 28.0,
                             fontWeight: FontWeight.bold)),
                     SizedBox(height: 20.0),
                     Row(
@@ -90,7 +90,7 @@ class _DetailsPageState extends State<DetailsPage> {
                         Text(widget.foodPrice,
                             style: TextStyle(
                                 fontFamily: 'Montserrat',
-                                fontSize: 20.0,
+                                fontSize: 24.0,
                                 color: Colors.grey)),
                         Container(height: 25.0, color: Colors.grey, width: 1.0),
                         Container(
@@ -98,7 +98,7 @@ class _DetailsPageState extends State<DetailsPage> {
                           height: 40.0,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(17.0),
-                              color: Color(0xFFFDFD96)),
+                              color: Color(0xFFFFE662)),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: <Widget>[
@@ -109,12 +109,12 @@ class _DetailsPageState extends State<DetailsPage> {
                                   width: 25.0,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(7.0),
-                                      color: Color(0xFFFDFD96)),
+                                      color: Color(0xFFFFE662)),
                                   child: Center(
                                     child: Icon(
                                       Icons.remove,
                                       color: Colors.white,
-                                      size: 20.0,
+                                      size: 26.0,
                                     ),
                                   ),
                                 ),
@@ -123,7 +123,8 @@ class _DetailsPageState extends State<DetailsPage> {
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontFamily: 'Montserrat',
-                                      fontSize: 15.0)),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 19.0)),
                               InkWell(
                                 onTap: () {},
                                 child: Container(
@@ -135,8 +136,8 @@ class _DetailsPageState extends State<DetailsPage> {
                                   child: Center(
                                     child: Icon(
                                       Icons.add,
-                                      color: Color(0xFFFDFD96),
-                                      size: 20.0,
+                                      color: Color(0xFFFFE662),
+                                      size: 26.0,
                                     ),
                                   ),
                                 ),
@@ -176,6 +177,7 @@ class _DetailsPageState extends State<DetailsPage> {
                               '\$52.00',
                               style: TextStyle(
                                 color: Colors.white,
+                                fontSize: 30,
                                 fontFamily: 'Montserrat'
                               )
                             ),
@@ -198,7 +200,7 @@ class _DetailsPageState extends State<DetailsPage> {
         curve: Curves.easeIn,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
-          color: cardTitle == selectedCard ? Color(0xFFFDFD96): Colors.white,
+          color: cardTitle == selectedCard ? Color(0xFFFFE662): Colors.white,
           border: Border.all(
             color: cardTitle == selectedCard ? 
             Colors.transparent :
