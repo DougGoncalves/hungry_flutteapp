@@ -12,7 +12,7 @@
 
 
 
- ## 💻 Projeto
+ ## 💻 Project
 
 Food app developed using Flutter. Layout and Color Scheme also picked by me
 
